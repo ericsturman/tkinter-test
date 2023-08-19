@@ -56,19 +56,11 @@ highThresh = IntVar(value=70)
 highThresh_entry = ttk.Entry(mainframe, width=7, textvariable=highThresh)
 highThresh_entry.grid(column=3, row=3, sticky=(W, E))
 
-
-#meters = StringVar()
-# ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
-
 ttk.Button(mainframe, text="Submit", command=openNewWindow).grid(column=3, row=4, sticky=W)
-
-# ttk.Button(mainframe, text="Download", command=writeToFile).grid(column=1, row=4, sticky=W)
 
 ttk.Label(mainframe, text="Input sequence").grid(column=1, row=1, sticky=W)
 ttk.Label(mainframe, text="Low threshold").grid(column=1, row=2, sticky=W)
 ttk.Label(mainframe, text="High threshold").grid(column=1, row=3, sticky=W)
-# ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
-# ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
 
 for child in mainframe.winfo_children(): 
     child.grid_configure(padx=5, pady=5)
