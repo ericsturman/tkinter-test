@@ -3,8 +3,6 @@ from tkinter import ttk
 import csv
 from tkinter import filedialog
 
-
-
 root = Tk()
 root.title("Enter Application Title Here.")
 
