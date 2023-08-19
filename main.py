@@ -10,7 +10,7 @@ root.title("Enter Application Title Here.")
 
 def writeToFile():
         directory = filedialog.asksaveasfilename(defaultextension="csv", filetypes=[("Comma Separated File", "csv")])
-        with open(directory, 'w') as f:
+        with open(directory, 'w', newline='') as f:
             w=csv.writer(f, quoting=csv.QUOTE_ALL)
             w.writerow(["one","two","three"])
             w.writerow(["1","2","3"])
